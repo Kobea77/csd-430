@@ -1,0 +1,46 @@
+/*
+    Author: Kobe Alexander
+    Date: November 1, 2026
+    Course: CSD-430
+    Assignment: Module 2 - Dynamic JSP Data Table
+    Purpose: Style the Mistborn JSP page with an external CSS stylesheet.
+*/
+
+/* Set the page color palette and basic typography. */
+:root { font-family: Arial, Helvetica, sans-serif; color: #e7e9ee; background: #10151c; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.6; }
+.page { max-width: 1100px; margin: 0 auto; padding: 50px 24px; }
+
+/* Introduce the book and course assignment. */
+.hero { border-left: 5px solid #c89a56; padding: 14px 0 22px 25px; }
+.eyebrow { color: #d4ac70; font-size: .78rem; font-weight: bold; letter-spacing: .18em; }
+h1 { font-family: Georgia, serif; font-size: clamp(2.3rem, 5vw, 4.3rem); line-height: 1.1; margin: 10px 0; }
+.subtitle { color: #ddbd8b; font-size: 1.2rem; }
+.summary { max-width: 720px; color: #bcc6d2; }
+
+/* Display the dataset's subject, categories, and total record count. */
+.details { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 30px 0; }
+.details div { padding: 20px; background: #1c2631; border: 1px solid #344453; border-radius: 10px; }
+.detail-label { display: block; color: #aab9c8; font-size: .8rem; margin-bottom: 5px; }
+.details strong { font-size: 1.1rem; }
+
+/* Format the HTML data table and category separator rows. */
+.table-section { background: #1a232d; border: 1px solid #344453; border-radius: 14px; padding: 26px; }
+h2 { font-family: Georgia, serif; margin: 0 0 6px; font-size: 1.8rem; }
+.table-description { color: #b7c3cf; margin: 0 0 18px; }
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 630px; }
+caption { text-align: left; color: #afbbc8; padding: 0 0 14px; font-size: .9rem; }
+thead { background: #304052; }
+th, td { text-align: left; padding: 14px 16px; border-bottom: 1px solid #364450; vertical-align: top; }
+tbody th { width: 23%; }
+tbody td:nth-child(2) { width: 25%; color: #dfc195; }
+tbody tr:not(.group-row):hover { background: #243240; }
+.group-row th { background: #3d342c; color: #f0ca90; text-transform: uppercase; font-size: .78rem; letter-spacing: .1em; }
+
+/* Keep the source attribution readable at the bottom of the page. */
+footer { margin-top: 25px; color: #aebac6; font-size: .88rem; }
+a { color: #e3b776; }
+a:hover { color: #ffe0a8; }
+@media (max-width: 640px) { .page { padding: 24px 14px; } .details { grid-template-columns: 1fr; } .table-section { padding: 18px 12px; } }
