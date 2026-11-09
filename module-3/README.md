@@ -36,9 +36,6 @@ Collect restaurant feedback from an HTML form and display the submitted values u
 - IntelliJ source of `index.jsp` and `results.jsp` showing documented Java scriptlets and HTML markup.
 - `styles.css` and Tomcat deployment success (if requested).
 
-## Attribution
-Code drafted with assistance from OpenAI ChatGPT (GPT-6, 2026), then intended for review, testing, and adaptation by the student. No external code was copied.
-
 ## Notes
 - This is a class exercise; it does not retain feedback after the request.
 - User-provided values are HTML-escaped when displayed, to reduce cross-site scripting risk.
